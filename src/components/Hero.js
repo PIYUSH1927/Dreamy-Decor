@@ -17,14 +17,14 @@ const Hero = () => {
           where comfort <br />
           meets desgin
         </h1>
-        <p style={{color:"black",textAlign:"left"}}>
+        <p style={{color:"black",textAlign:"center",position:"relative",bottom:"40px",fontFamily:"cursive"}}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at
           sed omnis corporis doloremque possimus velit! Repudiandae nisi odit,
           aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis
           alias?
         </p >
         
-        <Link  to='/products' className='btn hero-btn'>
+        <Link style={{position:"relative",bottom:"30px"}} to='/products' className='btn hero-btn'>
           shop now
         </Link>
         
@@ -51,7 +51,7 @@ const Wrapper = styled.section`
 
   p {
     line-height: 2;
-    max-width: 45em;
+    max-width: 50em;
     margin-bottom: 2rem;
     color: var(--clr-grey-5);
     font-size: 1rem;
@@ -67,10 +67,13 @@ const Wrapper = styled.section`
     }
     p {
       font-size: 1.25rem;
+     
     }
     .hero-btn {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
+      
+      
     }
     .img-container {
       display: block;
@@ -107,6 +110,12 @@ const Wrapper = styled.section`
     h1 {
       font-size:30px;
       margin-top:30px;
+    }
+    h1 {
+      margin-bottom: 2rem;
+      position:relative;
+      bottom:20px;
+      
     }
  
 `
